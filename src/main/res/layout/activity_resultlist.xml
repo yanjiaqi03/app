@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_layout_height"
+        android:background="@color/title_bgcolor">
+
+        <com.ihealth.aijiakang.widgets.FontTextView
+            android:id="@+id/resultlist_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="小坏的血压列表"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/textsize_18"
+            custom:fontWeight="1" />
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout
+            android:id="@+id/resultlist_return"
+            android:layout_width="@dimen/return_w"
+            android:layout_height="match_parent">
+
+            <com.ihealth.aijiakang.widgets.RecycleImageView
+                android:layout_width="@dimen/return_pic_w"
+                android:layout_height="@dimen/return_pic_h"
+                android:layout_gravity="center"
+                android:src="@mipmap/return_pic" />
+        </com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"></View>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/resultlist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/root"
+        android:scrollbars="none"
+        android:divider="@color/shadow_line_color"
+        android:dividerHeight="@dimen/line_width"
+        android:listSelector="@android:color/transparent"
+        custom:ptrMode="both"
+        custom:ptrDrawable="@mipmap/pull_to_refresh"
+        custom:ptrHeaderBackground="@color/root">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

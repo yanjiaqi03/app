@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/line_color"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/host_bottom_size"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/host_bottom_measure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.ihealth.aijiakang.widgets.SwitchImageView
+                android:id="@+id/host_bottom_measure_iv"
+                android:layout_width="@dimen/host_activity_bottom_iv_width"
+                android:layout_height="@dimen/host_activity_bottom_iv_height"
+                custom:offSrc="@mipmap/host_measure_off"
+                custom:onSrc="@mipmap/host_measure_on"/>
+
+            <com.ihealth.aijiakang.widgets.SwitchTextView
+                android:id="@+id/host_bottom_measure_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/host_activity_bottom_tv_margin_top"
+                android:text="@string/host_activity_bottom_measure"
+                android:textColor="@color/text_color"
+                custom:offColor="@color/text_color"
+                custom:onColor="@color/orange_color"
+                android:textSize="@dimen/host_activity_bottom_tv_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/host_bottom_results"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.ihealth.aijiakang.widgets.SwitchImageView
+                android:id="@+id/host_bottom_results_iv"
+                android:layout_width="@dimen/host_activity_bottom_iv_width"
+                android:layout_height="@dimen/host_activity_bottom_iv_height"
+                custom:offSrc="@mipmap/host_results_off"
+                custom:onSrc="@mipmap/host_results_on"/>
+
+            <com.ihealth.aijiakang.widgets.SwitchTextView
+                android:id="@+id/host_bottom_results_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/host_activity_bottom_tv_margin_top"
+                android:text="@string/host_activity_bottom_results"
+                android:textColor="@color/text_color"
+                custom:offColor="@color/text_color"
+                custom:onColor="@color/orange_color"
+                android:textSize="@dimen/host_activity_bottom_tv_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/host_bottom_discover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.ihealth.aijiakang.widgets.SwitchImageView
+                android:id="@+id/host_bottom_discover_iv"
+                android:layout_width="@dimen/host_activity_bottom_iv_width"
+                android:layout_height="@dimen/host_activity_bottom_iv_height"
+                custom:offSrc="@mipmap/host_discover_off"
+                custom:onSrc="@mipmap/host_discover_on"/>
+
+            <com.ihealth.aijiakang.widgets.SwitchTextView
+                android:id="@+id/host_bottom_discover_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/host_activity_bottom_tv_margin_top"
+                android:text="@string/host_activity_bottom_discover"
+                android:textColor="@color/text_color"
+                custom:offColor="@color/text_color"
+                custom:onColor="@color/orange_color"
+                android:textSize="@dimen/host_activity_bottom_tv_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/host_bottom_me"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.ihealth.aijiakang.widgets.SwitchImageView
+                android:id="@+id/host_bottom_me_iv"
+                android:layout_width="@dimen/host_activity_bottom_iv_width"
+                android:layout_height="@dimen/host_activity_bottom_iv_height"
+                custom:offSrc="@mipmap/host_me_off"
+                custom:onSrc="@mipmap/host_me_on"/>
+
+            <com.ihealth.aijiakang.widgets.SwitchTextView
+                android:id="@+id/host_bottom_me_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/host_activity_bottom_tv_margin_top"
+                android:text="@string/host_activity_bottom_me"
+                android:textColor="@color/text_color"
+                custom:offColor="@color/text_color"
+                custom:onColor="@color/orange_color"
+                android:textSize="@dimen/host_activity_bottom_tv_size" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fbfbfb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wheel_dialog_title_height"
+        >
+
+        <com.ihealth.aijiakang.widgets.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/wheel_height_title"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/textsize_16" />
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+            android:id="@+id/wheel_height_ok_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/ok"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/wheel_dialog_title_padding"
+            android:paddingLeft="@dimen/wheel_dialog_title_padding"
+            android:textColor="@color/orange_color"
+            android:textSize="@dimen/textsize_14"
+            />
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+            android:id="@+id/wheel_height_cancel_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/cancel"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/wheel_dialog_title_padding"
+            android:paddingLeft="@dimen/wheel_dialog_title_padding"
+            android:textColor="@color/text_shadow_color"
+            android:textSize="@dimen/textsize_14"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <com.ihealth.aijiakang.widgets.wheel.WheelView
+            android:id="@+id/height_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/wheel_center_view"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/wheel_mohu_up" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/wheel_center_view"
+            android:background="@drawable/wheel_mohu_down" />
+
+        <RelativeLayout
+            android:id="@+id/wheel_center_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <com.ihealth.aijiakang.widgets.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:text="@string/wheel_height_unit"
+                    android:textColor="@color/orange_color"
+                    android:textSize="@dimen/textsize_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="#cccccc" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#cccccc" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="#ff6633" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wheel_dialog_bottom_height"
+        android:background="@color/root"></View>
+
+
+</LinearLayout>

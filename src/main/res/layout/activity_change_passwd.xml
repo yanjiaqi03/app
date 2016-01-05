@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_layout_height">
+
+        <com.ihealth.aijiakang.widgets.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title_bgcolor"
+            android:gravity="center"
+            android:text="@string/change_passwd"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/textsize_18"
+            custom:fontWeight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"></View>
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout
+            android:id="@+id/change_passwd_return"
+            android:layout_width="@dimen/return_w"
+            android:layout_height="match_parent">
+
+            <com.ihealth.aijiakang.widgets.RecycleImageView
+                android:layout_width="@dimen/return_pic_w"
+                android:layout_height="@dimen/return_pic_h"
+                android:layout_gravity="center"
+                android:src="@mipmap/return_pic" />
+        </com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/rectangle_margin_lr"
+        android:paddingRight="@dimen/rectangle_margin_lr"
+        android:background="@color/layout_bgcolor">
+
+        <com.ihealth.aijiakang.widgets.FontEditText
+            android:id="@+id/change_passwd_input_ori"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:textColor="@color/text_color"
+            android:background="@drawable/edit_bg"
+            android:layout_marginTop="@dimen/vertical_interval_43"
+            android:gravity="center_vertical|left"
+            android:inputType="text"
+            android:paddingLeft="@dimen/edittext_padding"
+            android:paddingRight="@dimen/edittext_padding"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/textsize_16"
+            android:maxLength="@integer/password_max_length"
+            android:textCursorDrawable="@drawable/edittext_cursor"
+            android:hint="@string/change_passwd_input_ori"/>
+
+        <com.ihealth.aijiakang.widgets.FontEditText
+            android:id="@+id/change_passwd_input_new"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:textColor="@color/text_color"
+            android:background="@drawable/edit_bg"
+            android:layout_marginTop="@dimen/vertical_interval_20"
+            android:gravity="center_vertical|left"
+            android:inputType="text"
+            android:paddingLeft="@dimen/edittext_padding"
+            android:paddingRight="@dimen/edittext_padding"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/textsize_16"
+            android:maxLength="@integer/password_max_length"
+            android:textCursorDrawable="@drawable/edittext_cursor"
+            android:hint="@string/change_passwd_input_new"/>
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+            android:id="@+id/change_passwd_finish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/vertical_interval_43"
+            android:background="@drawable/orange_bt_bg"
+            android:gravity="center"
+            android:text="@string/finish"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/textsize_18"
+            custom:fontWeight="1" />
+
+    </LinearLayout>
+</LinearLayout>

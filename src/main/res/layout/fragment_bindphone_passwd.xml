@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/bindphone_passwd_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_15"
+        android:textColor="@color/text_color"
+        android:layout_marginLeft="@dimen/bindphone_tip_margin_left"
+        android:layout_marginTop="@dimen/vertical_interval_43"
+        android:layout_marginRight="@dimen/bindphone_tip_margin_right"
+        android:text="@string/bindphone_phone_tip"/>
+
+    <com.ihealth.aijiakang.widgets.FontEditText
+        android:id="@+id/bindphone_passwd_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/rectangle_margin_lr"
+        android:layout_marginRight="@dimen/rectangle_margin_lr"
+        android:textColor="@color/text_color"
+        android:background="@drawable/edit_bg"
+        android:layout_marginTop="@dimen/bindphone_margin_tip"
+        android:gravity="center_vertical|left"
+        android:inputType="text"
+        android:paddingLeft="@dimen/edittext_padding"
+        android:paddingRight="@dimen/edittext_padding"
+        android:textColorHint="@color/hint_color"
+        android:textSize="@dimen/textsize_16"
+        android:maxLength="@integer/password_max_length"
+        android:textCursorDrawable="@drawable/edittext_cursor"
+        android:hint="@string/set_passwd"/>
+
+
+
+    <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+        android:id="@+id/bindphone_passwd_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/bindphone_button_margin_top"
+        android:textSize="@dimen/textsize_18"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="@dimen/rectangle_margin_lr"
+        android:layout_marginRight="@dimen/rectangle_margin_lr"
+        android:gravity="center"
+        android:background="@drawable/orange_bt_bg"
+        custom:fontWeight="1"
+        android:text="@string/submit"/>
+</LinearLayout>

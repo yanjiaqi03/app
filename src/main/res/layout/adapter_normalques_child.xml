@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/normalques_padding_left"
+    android:background="@color/layout_bgcolor">
+
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/normalques_child_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_14"
+        android:lineSpacingMultiplier="1"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/text_color"
+        android:gravity="left|top"
+        />
+
+</LinearLayout>

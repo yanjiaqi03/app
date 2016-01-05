@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_layout_height"
+        android:background="@color/title_bgcolor">
+
+        <com.ihealth.aijiakang.widgets.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/userinfo_title"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/textsize_18"
+            custom:fontWeight="1" />
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout
+            android:id="@+id/userinfo_return"
+            android:layout_width="@dimen/return_w"
+            android:layout_height="match_parent">
+
+            <com.ihealth.aijiakang.widgets.RecycleImageView
+                android:layout_width="@dimen/return_pic_w"
+                android:layout_height="@dimen/return_pic_h"
+                android:layout_gravity="center"
+                android:src="@mipmap/return_pic" />
+        </com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout>
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+            android:id="@+id/userinfo_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/userinfo_padding_left"
+            android:paddingRight="@dimen/userinfo_padding_left"
+            android:text="@string/save"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/textsize_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"></View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bgcolor"
+        android:orientation="vertical">
+
+        <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+            android:id="@+id/userinfo_logo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/userinfo_logo_layout_height"
+            android:background="@color/layout_item_color"
+            android:paddingLeft="@dimen/userinfo_padding_left">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:background="@color/shadow_line_color"></View>
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/userinfo_logo"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <ImageView
+                android:layout_width="@dimen/arrow_w"
+                android:layout_height="@dimen/arrow_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/userinfo_padding_right"
+                android:src="@mipmap/arrow" />
+
+            <ImageView
+                android:id="@+id/userinfo_logo"
+                android:layout_width="@dimen/userinfo_logo_size"
+                android:layout_height="@dimen/userinfo_logo_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/userinfo_value_margin_right"
+                android:scaleType="centerCrop" />
+
+        </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/userinfo_nickname_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_item_height"
+            android:background="@color/layout_item_color"
+            android:paddingLeft="@dimen/userinfo_padding_left">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:background="@color/shadow_line_color"></View>
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/userinfo_nick_name"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+
+
+            <com.ihealth.aijiakang.widgets.FontEditText
+                android:id="@+id/userinfo_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/userinfo_nickname_margin_left"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="right|center_vertical"
+                android:hint="@string/userinfo_nickname_hint"
+                android:inputType="text"
+                android:paddingRight="@dimen/userinfo_value_margin_right"
+                android:textColor="@color/text_shadow_color"
+                android:textColorHint="@color/text_shadow_color"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="@dimen/textsize_16" />
+
+        </RelativeLayout>
+
+        <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+            android:id="@+id/userinfo_birth_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_item_height"
+            android:background="@color/layout_item_color"
+            android:paddingLeft="@dimen/userinfo_padding_left">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:background="@color/shadow_line_color"></View>
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/userinfo_birth"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <ImageView
+                android:layout_width="@dimen/arrow_w"
+                android:layout_height="@dimen/arrow_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/userinfo_padding_right"
+                android:src="@mipmap/arrow" />
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:id="@+id/userinfo_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/userinfo_value_margin_right"
+                android:text="1980年12月31日"
+                android:textColor="@color/text_shadow_color"
+                android:textSize="@dimen/textsize_16" />
+
+        </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+        <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+            android:id="@+id/userinfo_gender_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_item_height"
+            android:background="@color/layout_item_color"
+            android:paddingLeft="@dimen/userinfo_padding_left">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:background="@color/shadow_line_color"></View>
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/userinfo_gender"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:id="@+id/userinfo_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/userinfo_value_margin_right"
+                android:text="男"
+                android:textColor="@color/text_shadow_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <ImageView
+                android:layout_width="@dimen/arrow_w"
+                android:layout_height="@dimen/arrow_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/userinfo_padding_right"
+                android:src="@mipmap/arrow" />
+
+
+        </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+        <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+            android:id="@+id/userinfo_height_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_item_height"
+            android:background="@color/layout_item_color"
+            android:paddingLeft="@dimen/userinfo_padding_left">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:background="@color/shadow_line_color"></View>
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/userinfo_height"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <ImageView
+                android:layout_width="@dimen/arrow_w"
+                android:layout_height="@dimen/arrow_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/userinfo_padding_right"
+                android:src="@mipmap/arrow" />
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:id="@+id/userinfo_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/userinfo_value_margin_right"
+                android:text="175cm"
+                android:textColor="@color/text_shadow_color"
+                android:textSize="@dimen/textsize_16" />
+
+        </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+        <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+            android:id="@+id/userinfo_weight_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_item_height"
+            android:background="@color/layout_item_color"
+            android:paddingLeft="@dimen/userinfo_padding_left">
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/userinfo_weight"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <ImageView
+                android:layout_width="@dimen/arrow_w"
+                android:layout_height="@dimen/arrow_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/userinfo_padding_right"
+                android:src="@mipmap/arrow" />
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:id="@+id/userinfo_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/userinfo_value_margin_right"
+                android:text="80.9公斤"
+                android:textColor="@color/text_shadow_color"
+                android:textSize="@dimen/textsize_16" />
+
+        </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/line_color"></View>
+    </LinearLayout>
+</LinearLayout>

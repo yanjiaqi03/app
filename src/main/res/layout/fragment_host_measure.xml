@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/host_top_size"
+        android:background="@color/title_bgcolor">
+        
+        <com.ihealth.aijiakang.widgets.RecycleImageView
+            android:layout_width="@dimen/host_measure_ihealth_icon_width"
+            android:layout_height="@dimen/host_measure_ihealth_icon_height"
+            android:src="@mipmap/ihealth"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/line_color"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bgcolor"></LinearLayout>
+</LinearLayout>

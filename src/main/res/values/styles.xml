@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+
+    <style name="Theme.AppStartLoad" parent="android:Theme">
+        <item name="android:windowBackground">@color/root</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- dialog style -->
+    <style name="daily_activity_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- GifView -->
+    <style name="Widget_GifView" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- dialog 弹出与消失动画-->
+    <style name="translate_dialog">
+        <item name="android:windowEnterAnimation">@anim/window_translate_start</item>
+        <item name="android:windowExitAnimation">@anim/window_translate_close</item>
+    </style>
+
+    <!-- WebActivity 加载条-->
+    <!-- 自定义进度条 -->
+    <style name="WebProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/web_loading_bar</item>
+    </style>
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="password_min_length">6</integer>
+    <integer name="password_max_length">128</integer>
+    <integer name="phone_length">11</integer>
+    <integer name="username_max_length">6</integer>
+    <integer name="verifycode_timer_count">60</integer>
+</resources>

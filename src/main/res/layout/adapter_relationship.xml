@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ihealth.aijiakang.widgets.ClickBgLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relatonship_adapter_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_item_height"
+    android:background="@color/layout_item_color"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/relationship_item_height"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/relationship_padding_lr">
+
+    <com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout
+        android:id="@+id/relationship_listview_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/relationship_delete_icon_margin"
+        android:paddingRight="@dimen/relationship_delete_icon_margin">
+
+        <com.ihealth.aijiakang.widgets.RecycleImageView
+            android:layout_width="@dimen/relationship_delete_icon_size"
+            android:layout_height="@dimen/relationship_delete_icon_size"
+            android:layout_gravity="center"
+            android:src="@mipmap/delete_icon" />
+    </com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout>
+
+    <ImageView
+        android:id="@+id/relationship_listview_usericon"
+        android:layout_width="@dimen/relationship_icon_size"
+        android:layout_height="@dimen/relationship_icon_size"
+        android:src="@mipmap/ic_launcher" />
+
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/relationship_listview_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/relationship_name_margin_left"
+        android:text="爸爸"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/textsize_16" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ihealth.aijiakang.widgets.RecycleImageView
+            android:layout_width="@dimen/arrow_w"
+            android:layout_height="@dimen/arrow_h"
+            android:layout_gravity="right"
+            android:src="@mipmap/arrow" />
+
+    </FrameLayout>
+
+</com.ihealth.aijiakang.widgets.ClickBgLinearLayout>

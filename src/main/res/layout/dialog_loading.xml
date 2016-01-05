@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gifview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loadingbar_bg">
+
+    <com.ihealth.aijiakang.widgets.MyGifView
+        android:layout_width="@dimen/loading_gif_size"
+        android:layout_height="@dimen/loading_gif_size"
+        gifview:gif="@drawable/loadinggif"
+        android:alpha="0.9"
+        android:layout_gravity="center"
+        gifview:paused="true"/>
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/bindphone_phone_top_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_15"
+        android:textColor="@color/text_color"
+        android:layout_marginLeft="@dimen/bindphone_tip_margin_left"
+        android:layout_marginTop="@dimen/vertical_interval_43"
+        android:layout_marginRight="@dimen/bindphone_tip_margin_right"
+        android:text="@string/bindphone_phone_tip"/>
+
+    <include
+        layout="@layout/layout_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/rectangle_margin_lr"
+        android:layout_marginRight="@dimen/rectangle_margin_lr"
+        android:layout_marginTop="@dimen/bindphone_margin_tip"></include>
+
+    <include
+        layout="@layout/layout_verifycode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/rectangle_margin_lr"
+        android:layout_marginRight="@dimen/rectangle_margin_lr"
+        android:layout_marginTop="@dimen/vertical_interval_20"></include>
+    <!--<com.ihealth.aijiakang.widgets.FontEditText-->
+        <!--android:id="@+id/bindphone_code_edittext"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/edit_height"-->
+        <!--android:layout_marginLeft="@dimen/rectangle_margin_lr"-->
+        <!--android:layout_marginRight="@dimen/rectangle_margin_lr"-->
+        <!--android:layout_marginTop="@dimen/vertical_interval_20"-->
+        <!--android:background="@drawable/edit_bg"-->
+        <!--android:gravity="center_vertical|left"-->
+        <!--android:hint="@string/verify_code"-->
+        <!--android:paddingLeft="@dimen/edittext_padding"-->
+        <!--android:paddingRight="@dimen/edittext_padding"-->
+        <!--android:textColor="@color/text_color"-->
+        <!--android:textColorHint="@color/hint_color"-->
+        <!--android:textCursorDrawable="@drawable/edittext_cursor"-->
+        <!--android:textSize="@dimen/textsize_16" />-->
+
+    <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+        android:id="@+id/bindphone_phone_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/rectangle_margin_lr"
+        android:layout_marginRight="@dimen/rectangle_margin_lr"
+        android:layout_marginTop="@dimen/bindphone_button_margin_top"
+        android:background="@drawable/orange_bt_bg"
+        android:gravity="center"
+        android:text="@string/next_step"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/textsize_18"
+        custom:fontWeight="1" />
+
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/bindphone_phone_bottom_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/bindphone_button_margin_top"
+        android:textSize="@dimen/textsize_15"
+        android:textColor="@color/text_color"
+        android:text="@string/bindphone_change_phone_tip1"/>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_hostresults_selectitem_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/host_results_select_family_item_height"
+    android:gravity="center"
+    android:minHeight="@dimen/host_results_select_family_item_height"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/host_results_select_family_item_selected_circle"
+        android:layout_height="@dimen/host_results_select_family_item_selected_circle"
+        android:layout_marginBottom="@dimen/host_results_select_family_item_iconsize_marginbottom">
+
+        <com.ihealth.aijiakang.widgets.RecycleImageView
+            android:id="@+id/adapter_hostresults_selectitem_selectedbg"
+            android:layout_width="@dimen/host_results_select_family_item_selected_circle"
+            android:layout_height="@dimen/host_results_select_family_item_selected_circle"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/host_result_select_bg"/>
+
+        <ImageView
+            android:id="@+id/adapter_hostresults_selectitem_icon"
+            android:layout_width="@dimen/host_results_select_family_item_iconsize"
+            android:layout_height="@dimen/host_results_select_family_item_iconsize"
+            android:layout_gravity="center"
+            android:src="@mipmap/default_img"/>
+    </FrameLayout>
+
+
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/adapter_hostresults_selectitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/textsize_15" />
+</LinearLayout>

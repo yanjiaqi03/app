@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners
+        android:bottomLeftRadius="@dimen/wheel_bt_radius"
+        android:bottomRightRadius="@dimen/wheel_bt_radius"
+        android:topLeftRadius="@dimen/wheel_bt_radius"
+        android:topRightRadius="@dimen/wheel_bt_radius" />
+
+    <solid
+        android:color="#ff6633"></solid>
+
+    <size android:width="@dimen/wheel_bt_w"
+        android:height="@dimen/wheel_bt_h">
+    </size>
+</shape>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/layout_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/rectangle_margin_lr"
+        android:layout_marginRight="@dimen/rectangle_margin_lr"
+        android:layout_marginTop="@dimen/vertical_interval_43"></include>
+
+    <include
+        layout="@layout/layout_verifycode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/rectangle_margin_lr"
+        android:layout_marginRight="@dimen/rectangle_margin_lr"
+        android:layout_marginTop="@dimen/vertical_interval_20"></include>
+    <!--<com.ihealth.aijiakang.widgets.FontEditText-->
+        <!--android:id="@+id/register_code_edittext"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/edit_height"-->
+        <!--android:layout_marginLeft="@dimen/rectangle_margin_lr"-->
+        <!--android:layout_marginRight="@dimen/rectangle_margin_lr"-->
+        <!--android:layout_marginTop="@dimen/vertical_interval_20"-->
+        <!--android:background="@drawable/edit_bg"-->
+        <!--android:gravity="center_vertical|left"-->
+        <!--android:hint="@string/verify_code"-->
+        <!--android:paddingLeft="@dimen/edittext_padding"-->
+        <!--android:paddingRight="@dimen/edittext_padding"-->
+        <!--android:textColor="@color/text_color"-->
+        <!--android:textColorHint="@color/hint_color"-->
+        <!--android:textCursorDrawable="@drawable/edittext_cursor"-->
+        <!--android:textSize="@dimen/textsize_16" />-->
+
+    <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+        android:id="@+id/register_phone_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/rectangle_margin_lr"
+        android:layout_marginRight="@dimen/rectangle_margin_lr"
+        android:layout_marginTop="@dimen/vertical_interval_43"
+        android:background="@drawable/orange_bt_bg"
+        android:gravity="center"
+        android:text="@string/next_step"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/textsize_18"
+        custom:fontWeight="1" />
+
+
+</LinearLayout>

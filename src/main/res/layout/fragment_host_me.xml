@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/host_me_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/host_top_size"
+        android:background="@color/title_bgcolor"
+        android:gravity="center"
+        android:text="@string/host_activity_bottom_me"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/textsize_18"
+        custom:fontWeight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/line_color"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bgcolor"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_marginTop="@dimen/host_me_little_interval"
+                android:background="@color/line_color"></View>
+
+            <com.ihealth.aijiakang.widgets.ClickBgLinearLayout
+                android:id="@+id/host_me_user_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/host_me_user_layout_height"
+                android:background="@color/layout_item_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/host_me_padding_lr"
+                android:paddingRight="@dimen/host_me_padding_lr">
+
+                <ImageView
+                    android:id="@+id/host_me_user_logo"
+                    android:layout_width="@dimen/host_me_user_logo_size"
+                    android:layout_height="@dimen/host_me_user_logo_size"
+                    android:scaleType="centerCrop"
+                    android:src="@null" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/host_me_user_tv_margin_left"
+                        android:paddingRight="@dimen/host_me_userinfo_padding_right">
+
+                        <com.ihealth.aijiakang.widgets.FontTextView
+                            android:id="@+id/host_me_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="明泊而已"
+                            android:textColor="@color/title_color"
+                            android:textSize="@dimen/textsize_16" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/host_me_user_account_margin_top"
+                            android:orientation="horizontal">
+
+                            <com.ihealth.aijiakang.widgets.FontTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/host_me_account"
+                                android:textColor="@color/title_color"
+                                android:textSize="@dimen/textsize_12" />
+
+                            <com.ihealth.aijiakang.widgets.FontTextView
+                                android:id="@+id/host_me_account_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textColor="@color/title_color"
+                                android:textSize="@dimen/textsize_12" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.ihealth.aijiakang.widgets.RecycleImageView
+                        android:layout_width="@dimen/arrow_w"
+                        android:layout_height="@dimen/arrow_h"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+                </RelativeLayout>
+            </com.ihealth.aijiakang.widgets.ClickBgLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:background="@color/line_color"></View>
+
+
+            <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+                android:id="@+id/host_me_device_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_item_height"
+                android:layout_marginTop="@dimen/host_me_little_interval"
+                android:background="@color/layout_item_color">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/line_color"></View>
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/host_me_item_icon_size"
+                    android:layout_height="@dimen/host_me_item_icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/host_me_device" />
+
+                <com.ihealth.aijiakang.widgets.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_item_tv_margin_left"
+                    android:text="@string/my_devices"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/textsize_16" />
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/arrow_w"
+                    android:layout_height="@dimen/arrow_h"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/arrow" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/host_me_padding_lr"
+                    android:background="@color/shadow_line_color"></View>
+
+            </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+            <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+                android:id="@+id/host_me_relationship_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_item_height"
+                android:background="@color/layout_item_color">
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/host_me_item_icon_size"
+                    android:layout_height="@dimen/host_me_item_icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/host_me_relationship" />
+
+                <com.ihealth.aijiakang.widgets.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_item_tv_margin_left"
+                    android:text="@string/my_relationship"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/textsize_16" />
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/arrow_w"
+                    android:layout_height="@dimen/arrow_h"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/arrow" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_color"></View>
+            </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+
+            <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+                android:id="@+id/host_me_doctor_service_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_item_height"
+                android:layout_marginTop="@dimen/host_me_little_interval"
+                android:background="@color/layout_item_color">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/line_color"></View>
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/host_me_item_icon_size"
+                    android:layout_height="@dimen/host_me_item_icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/host_me_doctor_service" />
+
+                <com.ihealth.aijiakang.widgets.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_item_tv_margin_left"
+                    android:text="@string/doctor_service"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/textsize_16" />
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/arrow_w"
+                    android:layout_height="@dimen/arrow_h"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/arrow" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_color"></View>
+            </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+
+            <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+                android:id="@+id/host_me_feedback_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_item_height"
+                android:layout_marginTop="@dimen/host_me_little_interval"
+                android:background="@color/layout_item_color">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/line_color"></View>
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/host_me_item_icon_size"
+                    android:layout_height="@dimen/host_me_item_icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/host_me_feedback" />
+
+                <com.ihealth.aijiakang.widgets.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_item_tv_margin_left"
+                    android:text="@string/feed_back"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/textsize_16" />
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/arrow_w"
+                    android:layout_height="@dimen/arrow_h"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/arrow" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/host_me_padding_lr"
+                    android:background="@color/shadow_line_color"></View>
+            </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+            <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+                android:id="@+id/host_me_about_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_item_height"
+                android:background="@color/layout_item_color">
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/host_me_item_icon_size"
+                    android:layout_height="@dimen/host_me_item_icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/host_me_about_app" />
+
+                <com.ihealth.aijiakang.widgets.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_item_tv_margin_left"
+                    android:text="@string/about_app"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/textsize_16" />
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/arrow_w"
+                    android:layout_height="@dimen/arrow_h"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/arrow" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_color"></View>
+            </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+
+            <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+                android:id="@+id/host_me_setting_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_item_height"
+                android:layout_marginTop="@dimen/host_me_little_interval"
+                android:background="@color/layout_item_color">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/line_color"></View>
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/host_me_item_icon_size"
+                    android:layout_height="@dimen/host_me_item_icon_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/host_me_setting" />
+
+                <com.ihealth.aijiakang.widgets.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/host_me_item_tv_margin_left"
+                    android:text="@string/setting"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/textsize_16" />
+
+                <com.ihealth.aijiakang.widgets.RecycleImageView
+                    android:layout_width="@dimen/arrow_w"
+                    android:layout_height="@dimen/arrow_h"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/host_me_padding_lr"
+                    android:src="@mipmap/arrow" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_color"></View>
+            </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

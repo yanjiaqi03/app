@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@color/root">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/login_activity_layout_padding"
+        android:paddingRight="@dimen/login_activity_layout_padding">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_activity_logo_layout_height">
+
+            <com.ihealth.aijiakang.widgets.RecycleImageView
+                android:layout_width="@dimen/login_activity_logo_width"
+                android:layout_height="@dimen/login_activity_logo_height"
+                android:layout_gravity="center"
+                android:src="@mipmap/login_ihealth" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ihealth.aijiakang.widgets.FontEditText
+                android:id="@+id/login_activity_phone_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_height"
+                android:background="@drawable/edit_bg"
+                android:gravity="center_vertical|left"
+                android:hint="@string/phone_txt"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/edittext_padding"
+                android:paddingRight="@dimen/edittext_padding"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <com.ihealth.aijiakang.widgets.FontEditText
+                android:id="@+id/login_activity_passwd_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_height"
+                android:layout_marginTop="@dimen/login_activity_rectangle_margintop"
+                android:background="@drawable/edit_bg"
+                android:gravity="center_vertical|left"
+                android:hint="@string/passwd_txt"
+                android:maxLength="@integer/password_max_length"
+                android:paddingLeft="@dimen/edittext_padding"
+                android:inputType="textPassword"
+                android:paddingRight="@dimen/edittext_padding"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="@dimen/textsize_16" />
+
+            <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+                android:id="@+id/login_activity_login_bt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/login_activity_rectangle_margintop"
+                android:background="@drawable/orange_bt_bg"
+                android:gravity="center"
+                android:text="@string/login_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/textsize_18"
+                custom:fontWeight="1" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_activity_rectangle_margintop">
+
+                <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+                    android:id="@+id/login_activity_regist_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/login_activity_regist_marginleft"
+                    android:text="@string/login_activity_regist_txt"
+                    android:textColor="@color/orange_color"
+                    android:textSize="@dimen/textsize_14" />
+
+                <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+                    android:id="@+id/login_activity_forgetpasswd_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/login_activity_forget_marginright"
+                    android:text="@string/login_activity_forget_passwd"
+                    android:textColor="@color/orange_color"
+                    android:textSize="@dimen/textsize_14" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/login_activity_thirdparty_txt_marginbottom">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/line_color"></View>
+
+                <com.ihealth.aijiakang.widgets.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="@dimen/login_activity_thirdparty_line_margin"
+                    android:paddingRight="@dimen/login_activity_thirdparty_line_margin"
+                    android:text="@string/login_activity_third_party"
+                    android:textColor="@color/text_shadow_color"
+                    android:textSize="@dimen/textsize_12" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/login_activity_thirdparty_item_marginbottom">
+
+                <com.ihealth.aijiakang.widgets.ClickAlphaLinearLayout
+                    android:id="@+id/login_activity_mi_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.ihealth.aijiakang.widgets.RecycleImageView
+                        android:layout_width="@dimen/login_activity_thirdparty_item_iconsize"
+                        android:layout_height="@dimen/login_activity_thirdparty_item_iconsize"
+                        android:src="@mipmap/login_activity_mi" />
+
+                    <com.ihealth.aijiakang.widgets.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/login_activity_thirdparty_item_internal"
+                        android:text="@string/login_activity_mi"
+                        android:textColor="@color/text_shadow_color"
+                        android:textSize="@dimen/textsize_12" />
+                </com.ihealth.aijiakang.widgets.ClickAlphaLinearLayout>
+
+                <com.ihealth.aijiakang.widgets.ClickAlphaLinearLayout
+                    android:id="@+id/login_activity_wechat_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.ihealth.aijiakang.widgets.RecycleImageView
+                        android:layout_width="@dimen/login_activity_thirdparty_item_iconsize"
+                        android:layout_height="@dimen/login_activity_thirdparty_item_iconsize"
+                        android:src="@mipmap/login_activity_wechat" />
+
+                    <com.ihealth.aijiakang.widgets.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/login_activity_thirdparty_item_internal"
+                        android:text="@string/login_activity_wechat"
+                        android:textColor="@color/text_shadow_color"
+                        android:textSize="@dimen/textsize_12" />
+                </com.ihealth.aijiakang.widgets.ClickAlphaLinearLayout>
+
+                <com.ihealth.aijiakang.widgets.ClickAlphaLinearLayout
+                    android:id="@+id/login_activity_guest_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.ihealth.aijiakang.widgets.RecycleImageView
+                        android:layout_width="@dimen/login_activity_thirdparty_item_iconsize"
+                        android:layout_height="@dimen/login_activity_thirdparty_item_iconsize"
+                        android:src="@mipmap/login_activity_guest" />
+
+                    <com.ihealth.aijiakang.widgets.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login_activity_guest"
+                        android:textColor="@color/text_shadow_color"
+                        android:layout_marginTop="@dimen/login_activity_thirdparty_item_internal"
+                        android:textSize="@dimen/textsize_12"/>
+                </com.ihealth.aijiakang.widgets.ClickAlphaLinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

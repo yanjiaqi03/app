@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "iHealth.AiJiaKang.MI"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 23
+        versionName '2.0'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile files('libs/MobCommons.jar')
+    compile files('libs/MobTools.jar')
+    compile files('libs/oauth.jar')
+    compile files('libs/ShareSDK-Core-2.6.4.jar')
+    compile files('libs/ShareSDK-Email-2.6.4.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.6.4.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.4.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.4.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.4.jar')
+    compile project(':library_imageloader')
+    compile project(':afinalmaster')
+    compile project(':library_ihealthcloud')
+    compile project(':multi-image-selector')
+    compile files('libs/MiStats_SDK_Client_1_3_0.jar')
+    compile files('libs/MiPush_SDK_Client_2_2_21.jar')
+    compile project(':library_pulltorefresh')
+}

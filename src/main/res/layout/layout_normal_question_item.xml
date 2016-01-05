@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/feedback_normalques_item_margin_lr"
+    android:paddingRight="@dimen/feedback_normalques_item_margin_lr"
+    android:paddingTop="@dimen/feedback_normalques_item_margin_tb"
+    android:paddingBottom="@dimen/feedback_normalques_item_margin_tb">
+
+    <com.ihealth.aijiakang.widgets.SwitchTextView
+        android:id="@+id/normal_question_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_16"
+        custom:offColor="@color/title_color"
+        android:text="123123"
+        custom:onColor="@color/text_fff"
+        custom:offBg="@drawable/normal_question_off"
+        custom:onBg="@drawable/normal_question_on"
+        android:paddingLeft="@dimen/feedback_normalques_item_padding_lr"
+        android:paddingRight="@dimen/feedback_normalques_item_padding_lr"
+        android:paddingTop="@dimen/feedback_normalques_item_padding_tb"
+        android:paddingBottom="@dimen/feedback_normalques_item_padding_tb"/>
+
+</LinearLayout>

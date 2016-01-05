@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_layout_height"
+        android:background="@color/title_bgcolor">
+
+        <com.ihealth.aijiakang.widgets.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/prefer_setting"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/textsize_18"
+            custom:fontWeight="1" />
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout
+            android:id="@+id/prefer_return"
+            android:layout_width="@dimen/return_w"
+            android:layout_height="match_parent">
+
+            <com.ihealth.aijiakang.widgets.RecycleImageView
+                android:layout_width="@dimen/return_pic_w"
+                android:layout_height="@dimen/return_pic_h"
+                android:layout_gravity="center"
+                android:src="@mipmap/return_pic" />
+        </com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"></View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bgcolor"
+        android:orientation="vertical">
+
+        <com.ihealth.aijiakang.widgets.ClickBgRelativeLayout
+            android:id="@+id/prefer_unit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_item_height"
+            android:background="@color/layout_item_color">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/prefer_padding_left"
+                android:background="@color/shadow_line_color"></View>
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/prefer_padding_left"
+                android:text="@string/prefer_unit"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:id="@+id/prefer_unit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/prefer_unit_margin_right"
+                android:text="@string/mmHg"
+                android:textColor="@color/text_shadow_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <com.ihealth.aijiakang.widgets.RecycleImageView
+                android:layout_width="@dimen/arrow_w"
+                android:layout_height="@dimen/arrow_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/prefer_padding_left"
+                android:src="@mipmap/arrow" />
+        </com.ihealth.aijiakang.widgets.ClickBgRelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_item_height"
+            android:background="@color/layout_item_color">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/prefer_padding_left"
+                android:background="@color/shadow_line_color"></View>
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/prefer_padding_left"
+                android:text="@string/prefer_testing_voice"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <com.ihealth.aijiakang.widgets.SwitchImageView
+                android:id="@+id/prefer_testing_voice_switch"
+                android:layout_width="@dimen/switch_w"
+                android:layout_height="@dimen/switch_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/prefer_padding_right"
+                custom:offSrc="@mipmap/close_icon"
+                custom:onSrc="@mipmap/open_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_item_height"
+            android:background="@color/layout_item_color">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line_color"></View>
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/prefer_padding_left"
+                android:text="@string/prefer_result_voice"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+
+            <com.ihealth.aijiakang.widgets.SwitchImageView
+                android:id="@+id/prefer_result_voice_switch"
+                android:layout_width="@dimen/switch_w"
+                android:layout_height="@dimen/switch_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/prefer_padding_right"
+                custom:offSrc="@mipmap/close_icon"
+                custom:onSrc="@mipmap/open_icon" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

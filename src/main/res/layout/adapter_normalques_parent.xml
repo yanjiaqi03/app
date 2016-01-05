@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ihealth.aijiakang.widgets.ClickBgFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normalques_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_item_height"
+    android:background="@color/root"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/layout_item_height"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/line_color"></View>
+
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/normalques_parent_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="@dimen/normalques_padding_left"
+        android:singleLine="true"
+        android:layout_marginRight="@dimen/normalques_parent_tv_margin_right"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/textsize_15" />
+
+    <com.ihealth.aijiakang.widgets.RecycleImageView
+        android:id="@+id/normalques_parent_arrow"
+        android:layout_width="@dimen/arrow_h"
+        android:layout_height="@dimen/arrow_w"
+        android:layout_marginRight="@dimen/normalques_parent_padding_right"
+        android:layout_gravity="center_vertical|right"
+        android:src="@mipmap/expandlistview_arrow" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_gravity="bottom"
+        android:background="@color/line_color"></View>
+</com.ihealth.aijiakang.widgets.ClickBgFrameLayout>

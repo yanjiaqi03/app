@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fbfbfb"
+    android:orientation="vertical">
+
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/choose_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="18dp"
+        android:text="@string/userinfo_logo"
+        android:textColor="#666666"
+        android:textSize="@dimen/textsize_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/shadow_line_color"></View>
+
+        <com.ihealth.aijiakang.widgets.ClickBgLinearLayout
+            android:id="@+id/choose_from_camera"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@mipmap/camera_icon" />
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/choose_from_camera"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+        </com.ihealth.aijiakang.widgets.ClickBgLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/shadow_line_color"></View>
+
+        <com.ihealth.aijiakang.widgets.ClickBgLinearLayout
+            android:id="@+id/choose_from_picshop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="18dp">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@mipmap/picshop_icon" />
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/choose_from_picshop"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/textsize_16" />
+        </com.ihealth.aijiakang.widgets.ClickBgLinearLayout>
+    </LinearLayout>
+</LinearLayout>

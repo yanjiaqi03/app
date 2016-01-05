@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/root">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_layout_height"
+        android:background="@color/title_bgcolor">
+
+        <com.ihealth.aijiakang.widgets.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/forget_phone_title"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/textsize_18"
+            custom:fontWeight="1" />
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout
+            android:id="@+id/forget_passwd_phone_return"
+            android:layout_width="@dimen/return_w"
+            android:layout_height="match_parent">
+
+            <com.ihealth.aijiakang.widgets.RecycleImageView
+                android:layout_width="@dimen/return_pic_w"
+                android:layout_height="@dimen/return_pic_h"
+                android:layout_gravity="center"
+                android:src="@mipmap/return_pic" />
+        </com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"></View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bgcolor"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:layout_marginLeft="@dimen/rectangle_margin_lr"
+            android:layout_marginRight="@dimen/rectangle_margin_lr"
+            android:layout_marginTop="@dimen/vertical_interval_43"></include>
+
+        <include
+            layout="@layout/layout_verifycode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:layout_marginLeft="@dimen/rectangle_margin_lr"
+            android:layout_marginRight="@dimen/rectangle_margin_lr"
+            android:layout_marginTop="@dimen/vertical_interval_20"></include>
+        <!--<com.ihealth.aijiakang.widgets.FontEditText-->
+            <!--android:id="@+id/forget_passwd_phone_code_edittext"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/edit_height"-->
+            <!--android:layout_marginLeft="@dimen/rectangle_margin_lr"-->
+            <!--android:layout_marginRight="@dimen/rectangle_margin_lr"-->
+            <!--android:layout_marginTop="@dimen/vertical_interval_20"-->
+            <!--android:background="@drawable/edit_bg"-->
+            <!--android:gravity="center_vertical|left"-->
+            <!--android:hint="@string/verify_code"-->
+            <!--android:paddingLeft="@dimen/edittext_padding"-->
+            <!--android:paddingRight="@dimen/edittext_padding"-->
+            <!--android:textColor="@color/text_color"-->
+            <!--android:textColorHint="@color/hint_color"-->
+            <!--android:textCursorDrawable="@drawable/edittext_cursor"-->
+            <!--android:textSize="@dimen/textsize_16" />-->
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+            android:id="@+id/forget_passwd_phone_nextstep"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="@dimen/rectangle_margin_lr"
+            android:layout_marginRight="@dimen/rectangle_margin_lr"
+            android:layout_marginTop="@dimen/vertical_interval_43"
+            android:background="@drawable/orange_bt_bg"
+            android:gravity="center"
+            android:text="@string/next_step"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/textsize_18"
+            custom:fontWeight="1" />
+    </LinearLayout>
+</LinearLayout>

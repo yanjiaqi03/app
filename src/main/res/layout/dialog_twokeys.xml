@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="313dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/keydialog_bg"
+    android:orientation="vertical">
+
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/twokeys_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_item_height"
+        android:gravity="center"
+        android:text="@string/tip"
+        android:textColor="@color/text_shadow_color"
+        android:textSize="@dimen/textsize_17" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginBottom="23dp"
+        android:background="@color/shadow_line_color"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingBottom="16dp">
+
+        <com.ihealth.aijiakang.widgets.FontTextView
+            android:id="@+id/twokeys_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_17"
+            android:textColor="@color/title_color"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1"
+            android:layout_marginBottom="16dp"
+            android:text=""/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:orientation="horizontal">
+            <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+                android:id="@+id/twokeys_dialog_cancel"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/textsize_18"
+                android:text="@string/dialog_cancel"
+                android:gravity="center"
+                />
+
+            <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+                android:id="@+id/twokeys_dialog_confirm"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/textsize_18"
+                android:text="@string/dialog_confirm"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="wheel_date_year">年</string>
+    <string name="wheel_date_month">月</string>
+    <string name="wheel_date_day">日</string>
+    <string name="wheel_date_title">生日</string>
+    <string name="wheel_height_title">身高</string>
+    <string name="wheel_gender_title">性别</string>
+    <string name="wheel_height_unit">cm</string>
+    <string name="wheel_weight_title">体重</string>
+    <string name="wheel_weight_unit">公斤</string>
+</resources>

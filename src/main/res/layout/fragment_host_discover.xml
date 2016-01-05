@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.ihealth.aijiakang.widgets.FontTextView
+        android:id="@+id/host_discover_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/host_top_size"
+        android:gravity="center"
+        android:background="@color/title_bgcolor"
+        android:textColor="@color/title_color"
+        android:text="@string/host_activity_bottom_discover"
+        custom:fontWeight="1"
+        android:textSize="@dimen/textsize_18"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/line_color"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bgcolor"></LinearLayout>
+</LinearLayout>

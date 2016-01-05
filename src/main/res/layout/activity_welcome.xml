@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/root">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/welcome_web_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="83">
+
+            <com.ihealth.aijiakang.widgets.RecycleImageView
+                android:id="@+id/welcome_logo"
+                android:layout_width="@dimen/welcome_activity_logo_width"
+                android:layout_height="@dimen/welcome_activity_logo_height"
+                android:layout_gravity="center"
+                android:src="@mipmap/loading_logo_pic" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.ihealth.aijiakang.widgets.GuidePager
+        android:id="@+id/welcome_guideview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </com.ihealth.aijiakang.widgets.GuidePager>
+
+</RelativeLayout>

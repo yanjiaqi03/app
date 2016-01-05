@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_layout_height"
+        android:background="@color/title_bgcolor">
+
+        <com.ihealth.aijiakang.widgets.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/my_relationship"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/textsize_18"
+            custom:fontWeight="1" />
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout
+            android:id="@+id/relationship_return"
+            android:layout_width="@dimen/return_w"
+            android:layout_height="match_parent">
+
+            <com.ihealth.aijiakang.widgets.RecycleImageView
+                android:layout_width="@dimen/return_pic_w"
+                android:layout_height="@dimen/return_pic_h"
+                android:layout_gravity="center"
+                android:src="@mipmap/return_pic" />
+        </com.ihealth.aijiakang.widgets.ClickAlphaFrameLayout>
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+            android:id="@+id/relationship_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/relationship_padding_lr"
+            android:paddingRight="@dimen/relationship_padding_lr"
+            android:text="@string/edit"
+            android:textColor="@color/orange_color"
+            android:textSize="@dimen/textsize_16" />
+
+        <com.ihealth.aijiakang.widgets.ClickAlphaTextView
+            android:id="@+id/relationship_edit_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/relationship_padding_lr"
+            android:paddingRight="@dimen/relationship_padding_lr"
+            android:text="@string/finish_without_space"
+            android:textColor="@color/orange_color"
+            android:textSize="@dimen/textsize_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/relationship_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/title_layout_height"
+            android:background="@color/layout_bgcolor"
+            android:divider="@color/shadow_line_color"
+            android:dividerHeight="@dimen/line_width"
+            android:translationX="@dimen/relationship_delete_layout_marginleft"
+            android:layout_marginRight="@dimen/relationship_delete_layout_marginleft"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"></ListView>
+
+
+        <LinearLayout
+            android:id="@+id/relationship_noperson_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/title_layout_height"
+            android:background="@color/layout_bgcolor"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/relationship_noperson_layout_padding_bottom"
+            android:visibility="gone">
+
+            <com.ihealth.aijiakang.widgets.RecycleImageView
+                android:layout_width="@dimen/relationship_noperson_icon_w"
+                android:layout_height="@dimen/relationship_noperson_icon_h"
+                android:layout_marginBottom="@dimen/relationship_noperson_icon_margin_bottom"
+                android:src="@mipmap/relationship_no_person" />
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/relationship_no_add_yet"
+                android:textColor="@color/text_shadow_color"
+                android:textSize="@dimen/textsize_17" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/title_layout_height"
+            android:background="@color/line_color"></View>
+
+        <com.ihealth.aijiakang.widgets.ClickBgLinearLayout
+            android:id="@+id/relationship_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_layout_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_bgcolor"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/relationship_addicon_size"
+                android:layout_height="@dimen/relationship_addicon_size"
+                android:src="@mipmap/add_icon"/>
+
+            <com.ihealth.aijiakang.widgets.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_16"
+                android:textColor="@color/orange_color"
+                android:layout_marginLeft="@dimen/relationship_addtv_margin_left"
+                android:text="@string/relationship_add"/>
+        </com.ihealth.aijiakang.widgets.ClickBgLinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
